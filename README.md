@@ -1,3 +1,3 @@
 # Animating-Coffee-Website
 
-(design.JPG)
+![Desktop version](design.JPG)
