@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Coffee | Animating Responsive Website</title>
   </head>
@@ -32,28 +33,26 @@
           <div class="menu-icon" id="menu-icon">
             <img src="images/menu-btn.png">
           </div>
-          <div class="close-icon" id="close-icon">
-            <img src="images/close-x.png">
-          </div>
         </div>
       </header>
 
       <!-- SECTION ONE-->
       <section class="hero">
         <div class="hero__text">
-          <h5>#Coffee for hot days</h5>
-          <h1>- Cold Brew</h1>
-          <p>Boost your productivity and build your mood with a glass of 
+          <h5 data-aos="fade-right" data-aos-duration="1400">#Coffee for hot days</h5>
+          <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">- Cold Brew</h1>
+          <p data-aos="fade-right" data-aos-duration="1400" data-aos-delay="300">
+            Boost your productivity and build your mood with a glass of 
             coffee in the morning. Coffee has a stimulating effect.
           </p>
 
-          <div class="hero__main">
+          <div class="hero__main" data-aos="flip-down" data-aos-duration="1400"  data-aos-delay="400">
             <a href="#" class="btn">Order Now</a>
             <a href="#" class="price">$16.00 | <span>Regular Price</span></a>
           </div>
         </div>
 
-        <div class="hero__image">
+        <div class="hero__image" data-aos="zoom-in" data-aos-duration="1400">
           <img src="images/hero.png" alt="Coffee">
         </div>
       </section>
@@ -61,13 +60,19 @@
 
       <!-- ICONS SECTION -->
       <div class="icons">
-        <a href="#"><img src="images/facebook-white.png"></a>
-        <a href="#"><img src="images/instagram-white.png"></a>
-        <a href="#"><img src="images/twitter-x-white.png"></a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="600">
+          <img src="images/facebook-white.png">
+        </a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="700">
+          <img src="images/instagram-white.png">
+        </a>
+        <a href="#" data-aos="fade-in" data-aos-duration="1400" data-aos-delay="800">
+          <img src="images/twitter-x-white.png">
+        </a>
       </div>
 
       <!-- SCROLL DOWN SECTION -->
-      <div class="scroll">
+      <div class="scroll" data-aos="zoom-out-down" data-aos-duration="1400" data-aos-delay="550">
         <a href="#">
           <img src="images/scroll-down.png"> 
           Scroll Down
@@ -76,6 +81,13 @@
 
       <!-- JAVASCRIPT -->
       <script src="script.js"></script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 1,
+        });
+      </script>
     </div>
   </body>
 </html>
