@@ -209,12 +209,12 @@ body{
         margin: 35px 0;
         font-size: 23px;
         color: var(--text);
-        transition: all .6s ease;
+        transition: filter .4s ease;
       }
 
       img:hover{
         transform: translateY(-5px);
-        color: var(--main);
+        filter: invert(32%) sepia(34%) saturate(458%) hue-rotate(13deg) brightness(91%) contrast(93%);
       }
     }
 
